@@ -2009,3 +2009,15 @@ body.topic-selected .work-page-contact {
 
 
 
+
+@media (max-width: 768px) {
+    #custom-cursor {
+        display: none !important;
+    }
+    html, body {
+        cursor: auto !important;
+    }
+    a, button, .project-card, .theme-dot, .gray-text, .available-link {
+        cursor: pointer !important;
+    }
+}
