@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Maria Mihalcea - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;500;600;700;800;900&display=block" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="icon" type="image/png" href="favicon.png?v=3">
+</head>
+<body>
+
+    <header class="top-header">
+        <h1 class="hero-title">laura maria mihalcea</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#" class="logo desktop-link">home</a>
+        <a href="work.html" class="desktop-link">work</a>
+        <a href="about.html" class="desktop-link">about me</a>
+        <a href="#contact" class="desktop-link">contact</a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div id="blob-canvas-container" class="blob-canvas-container"></div>
+            <div class="hero-content">
+                <div class="hero-bottom-area">
+                    <p class="hero-caption">I design so you never feel left behind. Or at least I try. <a href="#contact" class="available-link">Available for work.</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-section">
+            <div class="work-divider">
+                <hr class="section-line">
+                <p class="section-label"><span class="large-dot"></span>SELECTED WORK</p>
+            </div>
+            
+            <div class="projects-grid">
+                <a href="taboo.html" class="project-card">
+                    <div class="project-image">
+                        <img src="taboo_cover.png" alt="Taboo Case Study">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Taboo</h3>
+                        <span class="project-role">phygital</span>
+                    </div>
+                </a>
+                
+                <a href="focusup.html" class="project-card">
+                    <div class="project-image">
+                        <img src="focusup_cover.png" alt="FocusUp Case Study">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">FocusUp</h3>
+                        <span class="project-role">ui/ux</span>
+                    </div>
+                </a>
+                
+                <a href="chorale.html" class="project-card">
+                    <div class="project-image">
+                        <img src="chorale_cover.jpg" alt="Chorale Case Study">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Chorale</h3>
+                        <span class="project-role">speculative design</span>
+                    </div>
+                </a>
+                
+                <a href="aurion.html" class="project-card">
+                    <div class="project-image">
+                        <img src="aurion_cover.jpg" alt="Aurion Case Study">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Aurion</h3>
+                        <span class="project-role">ux/ui project</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="work-divider">
+                <hr class="section-line">
+                <p class="section-label"><span class="large-dot"></span>ABOUT ME</p>
+            </div>
+            <h2 class="about-headline">I am <a href="about.html" class="available-link">Laura</a>, a master's student in Digital and Interaction Design at <a href="about.html#education" class="gray-text">Politecnico di Milano</a> with a background in Industrial Design.</h2>
+            <div class="about-grid">
+                <div class="about-portrait">
+                    <img src="laura_m_m.jpg" alt="Laura Maria Mihalcea" class="portrait-image">
+                </div>
+                
+                <div class="about-text-column">
+                    <p class="about-label">my work</p>
+                    <p class="about-desc">I explore human-centered and systemic approaches to design, translating complex technologies into intuitive and meaningful digital experiences.</p>
+                    <a href="https://polimi365-my.sharepoint.com/:b:/g/personal/11011849_polimi_it/IQAbHZ1SsfhSQ4-cx_UvjO_ZAa0yPpahxrvktQcWuZhZLLQ?e=JwvSgf" target="_blank" class="resume-button">
+                        <span>view full resume</span>
+                        <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" y1="12" x2="20" y2="12"></line>
+                            <polyline points="14 6 20 12 14 18"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="about-text-column aim-column">
+                    <p class="about-label">my aim</p>
+                    <p class="about-desc">Through research and interaction design, I aim to create systems that are accessible, inclusive and shaped around long-term impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="contact-headline">
+                <span class="contact-text-left">get in</span>
+                <a href="mailto:mihalcea.laura15@gmail.com" class="contact-loop-link">
+                    <img src="loop_1.jpg" alt="Get in touch" class="contact-loop-img" id="contactLoopImg">
+                </a>
+                <span class="contact-text-right">touch</span>
+            </h2>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top-area">
+            <div class="footer-col left-col">
+                <div class="footer-status-indicator"></div>
+                <p>email: <a href="mailto:mihalcea.laura15@gmail.com">mihalcea.laura15@gmail.com</a></p>
+                <p>based in: milan, italy</p>
+                <p><a href="#contact" class="available-link">available for work</a></p>
+            </div>
+            
+            <div class="footer-right-cols">
+                <div class="footer-col">
+                    <p class="footer-label">pages</p>
+                    <a href="#">home</a>
+                    <a href="about.html">about</a>
+                    <a href="#work">work</a>
+                </div>
+                
+                <div class="footer-col">
+                    <p class="footer-label">socials</p>
+                    <a href="https://www.linkedin.com/in/laura-maria-mihalcea-a2244a298/" target="_blank">linkedin</a>
+                    <a href="https://www.behance.net/lauramariamihalcea" target="_blank">behance</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <h2 class="huge-name">laura maria mihalcea</h2>
+            <hr class="footer-line">
+            <div class="footer-copyright-area">
+                <p class="copyright">&copy; 2026 laura maria mihalcea. all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
