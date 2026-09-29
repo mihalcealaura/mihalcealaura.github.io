@@ -270,8 +270,17 @@
             wireframe: false
         });
 
-        const blobMesh = new THREE.Mesh(geometry, material);
+                const blobMesh = new THREE.Mesh(geometry, material);
         scene.add(blobMesh);
+
+        function updateBlobScale() {
+            if (window.innerWidth < 768) {
+                blobMesh.scale.set(0.65, 0.65, 0.65);
+            } else {
+                blobMesh.scale.set(1, 1, 1);
+            }
+        }
+        updateBlobScale();
 
         // Resize handler
         window.addEventListener('resize', () => {
@@ -279,6 +288,7 @@
             camera.aspect = blobContainer.clientWidth / blobContainer.clientHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(blobContainer.clientWidth, blobContainer.clientHeight);
+            updateBlobScale();
         });
 
         // Interaction state
@@ -497,6 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(sec => observer.observe(sec));
     }
 });
+
 
 
 
