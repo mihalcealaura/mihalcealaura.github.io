@@ -318,9 +318,33 @@
             }
         });
 
-        window.addEventListener('mouseup', () => {
+                window.addEventListener('mouseup', () => {
             isDragging = false;
             renderer.domElement.style.cursor = 'grab';
+        });
+
+        // Touch Events
+        renderer.domElement.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            previousMousePosition = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+            if (isDragging && e.touches.length > 0) {
+                const deltaMove = {
+                    x: e.touches[0].clientX - previousMousePosition.x,
+                    y: e.touches[0].clientY - previousMousePosition.y
+                };
+
+                targetRotation.y += deltaMove.x * 0.015;
+                targetRotation.x += deltaMove.y * 0.015;
+
+                previousMousePosition = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            }
+        }, { passive: true });
+
+        window.addEventListener('touchend', () => {
+            isDragging = false;
         });
 
         // Scroll Event for passive rotation
@@ -507,6 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(sec => observer.observe(sec));
     }
 });
+
 
 
 
