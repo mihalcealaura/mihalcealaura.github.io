@@ -376,7 +376,7 @@
     const isWorkPage = document.querySelector('.work-page');
     if (isWorkPage) {
         const projectsData = [
-            { title: 'FocusUp', tags: ['ux/ui', 'product'], img: 'focusup_cover.png', url: 'focusup.html' },
+            { title: 'FocusUp', tags: ['ux/ui', 'product'], img: 'focusup_cover.jpg', url: 'focusup.html' },
             { title: 'Aurion', tags: ['ux/ui', 'phygital'], img: 'aurion_cover.jpg', url: 'aurion.html' },
             { title: 'Chorale', tags: ['product', 'speculative'], img: 'chorale_cover.jpg', url: 'chorale.html' },
             { title: 'Taboo', tags: ['product', 'phygital'], img: 'taboo_cover.png', url: 'taboo.html' }
@@ -507,6 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(sec => observer.observe(sec));
     }
 });
+
 
 
 
