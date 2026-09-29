@@ -544,3 +544,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+// Handle BFCache (Safari/Mobile Back Button)
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        document.querySelectorAll('main, footer, .navbar > a, .navbar > button, .top-header').forEach(el => {
+            el.style.animation = '';
+        });
+    }
+});
